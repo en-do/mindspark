@@ -60,9 +60,9 @@
         </div>
       </div>
     </div>
-    <div id="overlay"></div>
-    <div id="exit_pop" class="exitpopup">
-      <div class="exitpopup-content"><a href="#" class="close-popup">close</a>
+    <div id="overlay" style="display: block;"></div>
+    <div id="exit_pop" style="display: block;" class="exitpopup">
+      <div style="display: block;" class="exitpopup-content"><a href="#" class="close-popup">close</a>
         <div class="title-popup">Choose file type to convert:</div>
         <div class="wrap-popup">
           <form action="" method="post"></form>
@@ -70,7 +70,7 @@
             <div class="list-popup">
               <div class="item">
                 <label>
-                  <input type="radio" name="file" value="word"><i class="word_file icon-file"></i><span>Word .DOC</span>
+                  <input type="radio" name="file" value="word" checked><i class="word_file icon-file"></i><span>Word .DOC</span>
                 </label>
               </div>
               <div class="item">			
@@ -92,10 +92,52 @@
           </div>
           <div class="popup-column-right">
             <div class="wrap-pdf-icon"><i class="pdf-icon"></i></div>
+            <div class="convert-text">Please read carefully: By clicking the button above and installing the FromDocToPDF extension, I accept and agree to abide by the <a href="http://eula.mindspark.com/eula/" target="_blank">End User License Agreement </a>and <a href="http://eula.mindspark.com/eula/" target="_blank">Privacy Policy.</a>
+              <label>
+                <input type="checkbox"><span>Make Ask.com my new tab page.</span>
+              </label>
+              <label>
+                <input type="checkbox"><span>Make Ask.com my default search engine </span>
+              </label>
+            </div>
             <div class="convert-now"><a href="#" id="btn-convert-now" class="btn-convert-now">Convert Now</a></div>
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(fucntion(){
+         if ($("#exit_pop").length) {
+          var ouiBo = ouibounce($('#exit_pop')[0], {
+           aggressive: true,
+           timer: 1,
+           sensitivity: 2,
+           callback: function() { $("#overlay").show(); $("body").addClass("no_scroll");}
+          });
+         }
+         $("#exit_pop").find(".close-popup").on('click', function(e) {
+          $("#overlay").css("display","none");
+          $("#exit_pop").css("display","none");
+          $("body").removeClass("no_scroll");
+          return false;
+         });
+         $("#overlay").on('click', function(e) {
+          $("#overlay").css("display","none");
+          $("#exit_pop").css("display","none");
+          $("body").removeClass("no_scroll");
+          return false;
+         });
+         $("#exit_pop").find(".btn-convert-now").on('click', function(e) {
+          $("#overlay").css("display","none");
+          $("#exit_pop").css("display","none");
+          $("body").removeClass("no_scroll");
+          return false;
+         });
+         
+         $('.close-popup').on('click', function() {
+          $('#exit_pop, #overlay').hide(300);
+         });
+        });
+      </script>
     </div>
   </body>
 </html>

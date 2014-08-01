@@ -1,0 +1,37 @@
+.no_scroll{overflow:hidden}
+#overlay{background-color:rgba(0,0,0,0.5);position:fixed;display:none;top:0;left:0;width:100%;height:100%;background:overback;z-index:99;overflw:hidden}
+.exitpopup{width:100%;min-height:100%;overflow:hidden;position:fixed;top:0;z-index:2222;display:none;}
+.exitpopup .exitpopup-content{background:url("../img/bg_exitpopup.png") no-repeat 0 0;width:700px;height:535px;margin:0 auto;padding:8px 211px 36px 211px;}
+.exitpopup .exitpopup-content #ie-ff{background:url("../img/ie-ff.png") no-repeat 0 0;width:74px;height:39px;display:block}
+.exitpopup .exitpopup-content .title-popup{color:#1f1f1f;font-size:62px;font-family:'franklin_gothic_fsdemi',sans-serif;letter-spacing:-2px;margin-bottom:20px}
+.exitpopup .exitpopup-content .popup-column-left{float:left;width:340px;}
+.exitpopup .exitpopup-content .popup-column-left .item input{display:inline-block;position:relative;top:-30px}
+.exitpopup .exitpopup-content .popup-column-left .item .icon-file{background-image:url("../img/list-file.png");width:92px;height:90px;display:inline-block;margin-left:10px}
+.exitpopup .exitpopup-content .popup-column-left .item span{color:#1f1f1f;font-size:33px;font-family:'franklin_gothic_fsdemi',sans-serif;position:relative;top:-35px;padding-left:14px}
+.exitpopup .exitpopup-content .popup-column-right{float:right;}
+.exitpopup .exitpopup-content .popup-column-right .wrap-pdf-icon .pdf-icon{background:url("../img/pdf-file.png") no-repeat 0 0;width:353px;height:162px;display:block;margin-top:62px}
+.exitpopup .exitpopup-content .popup-column-right .convert-text{color:#898989;font-size:10px;width:340px;margin-bottom:-20px;margin-top:20px;text-align:center;}
+.exitpopup .exitpopup-content .popup-column-right .convert-text a{color:#898989}
+.exitpopup .exitpopup-content .popup-column-right .convert-text a:hover{text-decoration:none}
+.exitpopup .exitpopup-content .popup-column-right .convert-text span{margin-left:3px}
+.exitpopup .exitpopup-content .popup-column-right .convert-text input{position:relative;top:3px}
+.exitpopup .exitpopup-content .popup-column-right .convert-now .btn-convert-now{background:url("../img/btn-popup.png") no-repeat 0 0;width:353px;height:91px;display:block;text-indent:-5500px;margin-top:28px}
+.exitpopup .exitpopup-content .popup-column-right .convert-now .btn-convert-now:hover{background:url("../img/btn-popup.png") no-repeat 0 -92px}
+.exitpopup .exitpopup-content .word_file{background-position:0 0}
+.exitpopup .exitpopup-content .exel_file{background-position:0 -95px}
+.exitpopup .exitpopup-content .exel_image{background-position:0 -195px}
+.exitpopup .exitpopup-content .other{background-position:0 -295px}
+.close-popup{background:url("../img/close_popup.png") no-repeat 0 0;text-indent:-5500px;display:block;float:right;width:8px;height:8px}
+.afterpopup_ie{width:100%;min-height:100%;overflow:hidden;position:absolute;top:68%;z-index:2222;display:none}
+.afterpopup-content_ie{margin:0 auto;background:#fff;border:1px solid #000;width:660px;height:100px;border-top:6px solid #fbc431;z-index:991;position:relative;}
+.afterpopup-content_ie .after-column-left{float:left;padding-left:18px;padding-top:35px}
+.afterpopup-content_ie .after-column-right{float:right;}
+.afterpopup-content_ie .after-column-right p{font-family:Arial,Helvetica,sans-serif;font-size:48px;font-weight:bold;color:#000102;margin:0;padding-top:22px;padding-right:55px}
+.after-arrow-ie{background:url("../img/after-arrow-ie.png") no-repeat 0 0;width:108px;height:95px;display:block;position:relative;z-index:99;margin:0 auto;top:-22px}
+.afterpopup_chrome{width:100%;min-height:100%;overflow:hidden;position:absolute;top:201px;left:20%;z-index:2222;display:none}
+.afterpopup-content_chrome{margin:0 auto;width:660px;height:100px;z-index:991;position:relative;}
+.afterpopup-content_chrome .after-arrow-chrome{background:url("../img/after-arrow-chrome.png") no-repeat 0 0;display:block;width:385px;height:158px;position:relative;z-index:99}
+.afterpopup_ff{width:100%;min-height:100%;overflow:hidden;position:absolute;float:left;top:150px;margin-left:0%;z-index:2222;display:none}
+.afterpopup-content_ff{float:left;margin-left:10%;width:660px;height:100px;z-index:991;position:relative;}
+.afterpopup-content_ff .after-arrow-ff{background:url("../img/after-arrow-ff-step1.png") no-repeat 0 0;display:block;width:657px;height:196px;position:relative;z-index:99}
+/* End of _ style*/

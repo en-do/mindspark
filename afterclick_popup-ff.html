@@ -7,8 +7,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=100vw, initial-scale=1, maximum-scale=2">
-    <link rel="stylesheet" type="text/css" href="http://ak.imgfarm.com/images/splash/fdtpdf/css/mindspark_main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
     <script src="http://ak.imgfarm.com/images/splash/fdtpdf/js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="http://ak.imgfarm.com/images/splash/fdtpdf/js/vendor/jquery-migrate-.1.1.1.min.js"></script>
     <script src="http://ak.imgfarm.com/images/splash/fdtpdf/js/mindspark_main.min.js"></script>
   </head>
   <body class="arrow_left_lp1">
@@ -16,7 +18,7 @@
       <div class="header">
         <div class="inner">
           <div class="header-text">A world of file conversions. All in one extension.</div>
-          <div class="logo"><a href="#" class="site-logo"><img src="http://ak.imgfarm.com/images/splash/fdtpdf/img/logo.png"></a><a href="#" class="ask-logo"><img src="http://ak.imgfarm.com/images/splash/fdtpdf/img/ask-logo.png"></a></div>
+          <div class="logo"><img src="http://ak.imgfarm.com/images/splash/fdtpdf/img/logo.png"><img src="http://ak.imgfarm.com/images/splash/fdtpdf/img/ask-logo.png"></div>
         </div>
       </div>
       <div class="main">
@@ -24,9 +26,18 @@
           <div class="page-title">
             <h1>Convert files to PDF <sup>TM</sup></h1>
           </div>
-          <div class="chb">[2,243,234] people already installed fromDOCtoPDF<sup>TM    </sup><br><br></div>
+          <div class="chb">2,243,234 people already installed fromDOCtoPDFTM. Trust the quality and security that millions trusted before you! With fromDOCtoPDFTM:    
+            <label><i class="checkbox"></i>
+              <input type="checkbox"><span>Make Ask.com my new tab page</span>
+            </label>
+            <label><i class="checkbox"></i>
+              <input type="checkbox"><span>Make Ask.com my default search engine</span>
+            </label>
+          </div>
           <div class="download">
-            <div class="btn-download"><a href="#" class="btn-free-download">Free Download</a><a href="#" class="link-free-download">Download Now for Free</a></div>
+            <div class="btn-download"><a href="#" class="btn-free-download">Free Download</a><a href="#" class="link-free-download">Download Now for Free</a>
+              <div id="ie-ff" class="ie-ff"></div>
+            </div>
             <div class="btn-text">Please read carefully: By clicking the button above and installing the FromDocToPDF extension, I accept and agree to abide by the End User License Agreement and Privacy Policy. </div>
           </div>
         </div>
@@ -37,15 +48,23 @@
           <div class="panel-text">The FromDocToPDF toolbar offers convenient web search, homepage, and default search. More info. The FromDocToPDF extension offers FREE File Conversions, FREE Reference Tools, FREE Language Translator and more.</div>
           <div class="footer-navigation">
             <ul>
-              <li class="first"><a href="#">Help & Feedback</a></li>
-              <li><a href="#">Policies</a></li>
-              <li><a href="#">Uninstall</a></li>
-              <li><a href="#">We're Hiring</a></li>
-              <li class="last"><a href="#">Contact Us </a></li>
+              <li class="first"><a href="#" target="_blank">Help & Feedback</a></li>
+              <li><a href="#" target="_blank">Policies</a></li>
+              <li><a href="#" target="_blank">Uninstall</a></li>
+              <li><a href="#" target="_blank">We're Hiring</a></li>
+              <li class="last"><a href="#" target="_blank">Contact Us </a></li>
             </ul>
           </div>
           <div class="copyright">™, ® + © 2014 Mindspark Interactive Network, Inc. All rights reserved. An IAC Company. Mindspark Interactive Network, Inc. is the source of the FromDocToPDF application. Any third party products, brands or trademarks listed above are the sole property of their respective owner.No affiliation or endorsement is intended or implied. </div>
           <div class="powered"><a href="#"><img src="http://ak.imgfarm.com/images/splash/fdtpdf/img/norton.jpg"></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay" style="display: block;"></div>
+    <div id="afterpopup_ff" style="display: block;" class="afterpopup_ff">
+      <div class="afterpopup-content_ff">
+        <div class="after-arrow-ff">
+          <div class="after-arrow-ff"></div>
         </div>
       </div>
     </div>

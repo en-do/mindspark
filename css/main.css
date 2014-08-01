@@ -43,8 +43,11 @@ td,th{padding:0}
 @font-face{font-family:'franklin_gothic_fsdemi';src:url("../fonts/FranklinGothic-Demi-webfont.eot");src:url("../fonts/FranklinGothic-Demi-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/FranklinGothic-Demi-webfont.woff") format('woff'),url("../fonts/FranklinGothic-Demi-webfont.ttf") format('truetype'),url("../fonts/FranklinGothic-Demi-webfont.svg#franklin_gothic_fsdemi") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'franklin_gothic_fsbook';src:url("../fonts/FranklinGothic-Book-webfont.eot");src:url("../fonts/FranklinGothic-Book-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/FranklinGothic-Book-webfont.woff") format('woff'),url("../fonts/FranklinGothic-Book-webfont.ttf") format('truetype'),url("../fonts/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook") format('svg');font-weight:normal;font-style:normal}
 html{color:#929292;font-size:1em;line-height:1.4}
+body{min-width:1200px}
 .arrow_left_lp1{background:url("../img/arrow-left.gif") no-repeat left -20px}
 .arrow_right_lp1{background:url("../img/arrow-right.gif") no-repeat right -20px}
+.arrow_left_lp2{background:url("../img/arrow-left.png") no-repeat left 130px}
+.arrow_right_lp2{background:url("../img/arrow-right.png") no-repeat right 134px}
 .inner{width:960px;margin:0 auto}
 .clear{clear:both}
 ::-moz-selection{background:#fff;text-shadow:none}
@@ -58,6 +61,8 @@ textarea{resize:vertical}
 /* Site style*/
 /* _ style*/
 body{font:12px Helvetica,Arial,sans-serif}
+.header a{color:#898989}
+.header a:hover{text-decoration:none}
 .header .toolbar-lp2-header{background:url("../img/toolbar.png") no-repeat center;display:block;height:40px}
 .header .header-text{text-align:center;margin-top:10px}
 .header .logo{padding-left:341px;padding-top:10px;}
@@ -68,7 +73,7 @@ body{font:12px Helvetica,Arial,sans-serif}
 .main{margin-bottom:85px;}
 .main .page-title{text-align:center;}
 .main .page-title h1{color:#1f1f1f;font-size:72px;font-family:'franklin_gothic_fsdemi',sans-serif;font-weight:normal;letter-spacing:-2px;margin:46px 0;text-indent:20px}
-.main .page-title sup{color:#1f1f1f;font-size:12px;font-family:'franklin_gothic_fsdemi',sans-serif;top:-42px;position:relative;margin-left:-6px;letter-spacing:0}
+.main .page-title sup{color:#1f1f1f;font-size:12px;font-family:'franklin_gothic_fsdemi',sans-serif;top:-42px;position:relative;margin-left:5px;letter-spacing:0}
 .main .wizard-title{margin-bottom:80px;}
 .main .wizard-title h1{font-family:'PT Sans',sans-serif}
 .main .wizard-title sup{margin-left:5px}
@@ -81,18 +86,20 @@ body{font:12px Helvetica,Arial,sans-serif}
 .main .download .btn-download .btn-free-download:hover{background:url("../img/buttons.png") no-repeat 0 -141px}
 .main .download .btn-download .link-free-download{color:#3f6fc4;font-size:18px;display:block;margin:15px 0}
 .main .download .btn-download .link-free-download:hover{text-decoration:none}
+.main .download .btn-download .ie-ff{position:relative;top:-43px;margin-left:495px}
 .main .download .btn-text{color:#898989;font-size:12px;line-height:20px;width:590px;text-align:center;margin:0 auto;}
 .main .download .btn-text a{color:#898989;font-size:12px}
 .main .download .btn-text a:hover{text-decoration:none}
 .main .wrap-wizard .column-left{float:left;width:540px;padding-left:10px}
 .main .wrap-wizard .column-right{float:right;width:390px}
 .main .wrap-wizard-download .wizard-checkbox{padding-left:54px;margin-bottom:10px;}
-.main .wrap-wizard-download .wizard-checkbox input{margin-right:5px;position:relative;top:3px}
+.main .wrap-wizard-download .wizard-checkbox input{margin-right:5px;position:relative;top:2px}
 .main .wrap-wizard-download .wizard-checkbox span{color:#898989;font-size:12px}
 .main .wrap-wizard-download .btn-wizard{background:url("../img/buttons.png") no-repeat 0 -805px;width:550px;height:117px;text-indent:-5500px;display:block}
 .main .wrap-wizard-download .btn-wizard:hover{background:url("../img/buttons.png") no-repeat 0 -688px}
 .main .wrap-wizard-download .wizard-description{padding-top:15px}
 .main .wizard-specs{background:#f2f2f2;margin:0 10px;padding:20px;-webkit-border-radius:4px;border-radius:4px;}
+.main .wizard-specs .ie-ff{float:right;margin-top:-27px}
 .main .wizard-specs .item{border-top:1px solid #b7b7b7;color:#1f1f1f;font-size:15px;padding:8px 0;}
 .main .wizard-specs .item span{color:#1f1f1f;font-weight:bold;font-size:15px;font-family:Arial,Helvetica,sans-serif;text-align:left;width:145px;display:inline-block}
 .main .wizard-specs .item .green{width:auto;color:#528c09}
@@ -103,12 +110,56 @@ body{font:12px Helvetica,Arial,sans-serif}
 .main .wizard-user-col sup{font-size:12px}
 .main .wizard-down{width:355px;margin:0 auto}
 .main .magic-wizard{background:url("../img/lp2_2_animation.gif") no-repeat 0 0;display:block;height:277px;width:461px;position:relative;top:-92px;left:-10px}
+.main .chb-lp4{margin:0 auto;text-align:center;color:#1f1f1f;font-size:12px}
+.main .wrap-content-area{background:#f2f2f2;padding:15px;margin-top:18px;}
+.main .wrap-content-area .content-area{padding-top:17px}
+.main .wrap-content-area .buttons-area{position:relative;margin:0 auto;width:470px;}
+.main .wrap-content-area .buttons-area .wrap-link-area{text-align:center;}
+.main .wrap-content-area .buttons-area .wrap-link-area .link-area{color:#3f6fc4;font-size:18px}
+.main .wrap-content-area .buttons-area .link-area:hover{text-decoration:none}
+.main .wrap-content-area .arrow_l{background:url("../img/arrow_lr.png") no-repeat left 0;height:77px;width:48px;display:inline-block;position:absolute;top:15px;left:480px}
+.main .wrap-content-area .arrow_r{background:url("../img/arrow_lr.png") no-repeat right 0;height:77px;width:48px;display:inline-block;position:absolute;top:15px;right:480px}
+.main .wrap-content-area .column-left{float:left;width:450px;padding-left:16px}
+.main .wrap-content-area .column-right{float:right;width:400px;padding-left:50px}
+.main .wrap-content-area .ie-ff{position:relative;float:right;margin-top:-45px}
+.main .content-area p{font-size:11px;font-family:Arial,Helvetica,sans-serif;margin:0 -3px;text-align:center;}
+.main .content-area p a{color:#929292}
+.main .content-area p a:hover{text-decoration:none}
+.main .content-area .spec-area{padding-left:15px;}
+.main .content-area .spec-area .item{padding:10px 0;border-bottom:1px solid #b7b7b7;font-size:15px;color:#898989;}
+.main .content-area .spec-area .item span{width:145px;font-weight:bold;text-align:left;display:inline-block}
+.main .content-area .spec-area .item a{color:#898989}
+.main .content-area .spec-area .item a:hover{text-decoration:none}
+.main .content-area .steps .step{font-size:18px;color:#898989;padding:6px 0;}
+.main .content-area .steps .step span{font-weight:bold}
+.main .content-area .steps .step a{color:#898989}
+.main .content-area .steps .step a:hover{text-decoration:none}
+.main .supported-files{padding:20px 10px 0 10px;}
+.main .supported-files p{padding:0;margin:0;color:#898989;font-size:11px}
+.main .supported-files a{color:#898989}
+.main .supported-files a:hover{text-decoration:none}
+.main .supported-files .supported-title{color:#1f1f1f;font-weight:bold;font-size:15px;padding:14px 0}
+.main .supported-files .supported-content{color:#1f1f1f;font-size:14px;line-height:20px;letter-spacing:0;}
+.main .supported-files .supported-content a{color:#3f6fc4;font-size:15px}
+.main .supported-files .supported-content a:hover{text-decoration:none}
+.main .button-down{width:330px;margin:53px auto 0 auto;}
+.main .button-down .btn-link{color:#3f6fc4;font-size:18px;text-align:center;display:block;margin-top:12px}
+.main .button-down .btn-link:hover{text-decoration:none}
 .main .btn-wizard-small{background:url("../img/buttons.png") no-repeat 0 -925px;width:355px;height:75px;display:block}
 .main .btn-wizard-small:hover{background:url("../img/buttons.png") no-repeat 0 -1003px}
+.main .btn-area{background:url("../img/buttons.png") no-repeat 0 -290px;width:470px;height:116px;display:inline-block;text-indent:-5500px}
+.main .btn-area:hover{background:url("../img/buttons.png") no-repeat 0 -406px}
+.main .btn-green-small{background:url("../img/buttons.png") no-repeat 0 -522px;width:330px;height:78px;display:block;text-indent:-5500px}
+.main .btn-green-small:hover{background:url("../img/buttons.png") no-repeat 0 -606px}
+.ie-ff{background:url("../img/ie-ff.png") no-repeat 0 0;width:74px;height:39px;display:block}
+.ie-ff-popup{background:url("../img/ie-ff.png") no-repeat 0 0;width:74px;height:39px;display:block;margin:0 auto}
+.link-free-download{color:#3f6fc4;font-size:18px;display:block;margin:0;text-align:center}
+.link-free-download:hover{text-decoration:none}
 /* End of _ style*/
 /* _ style*/
 .footer{background:url("../img/bg_footer.png") no-repeat scroll center bottom;width:100%;height:400px;}
 .footer a{color:#898989}
+.footer a:hover{text-decoration:none}
 .footer .panel{margin:0 85px;padding-top:13px}
 .footer .panel-text{margin-top:-20px;text-align:center}
 .footer .footer-navigation{text-align:center;}
@@ -119,14 +170,15 @@ body{font:12px Helvetica,Arial,sans-serif}
 .footer .footer-navigation ul li a:hover{text-decoration:none}
 .footer .copyright{font-size:12px;width:564px;text-align:center;margin:0 auto}
 .footer .powered{text-align:center;margin-top:25px}
-.quick-specs{width:750px;height:0;border-right:220px solid transparent;border-left:220px solid transparent;border-bottom:161px solid #e6efff;margin:-80px auto 30px auto;}
+.quick-specs{width:490px;height:0;border-right:288px solid transparent;border-left:288px solid transparent;border-bottom:165px solid #e6efff;margin:-80px auto 30px auto;}
 .quick-specs .title{font-size:18px;color:#898989;text-align:center;font-family:franklin_gothic_fsbook,Arial,Helvetica,sans-serif;padding:14px 0 16px 0}
 .quick-specs p{line-height:20px;font-size:12px;color:#898989;text-align:center;margin:0;}
 .quick-specs p a{color:#898989;font-size:12px}
 .quick-specs p a:hover{text-decoration:none}
 .quick-specs p .green{color:#57940a}
-.footer_wizard{background:#f2f2f2;height:298px;}
-.footer_wizard .footer-navigation{padding-top:24px}
+.footer_wizard{background:#f2f2f2;height:298px}
+.footer_lp4{background:none;height:390px;}
+.footer_lp4 .footer-navigation{padding-top:24px}
 /* End of _ style*/
 /* END Site style*/
 .hidden{display:none !important;visibility:hidden}
